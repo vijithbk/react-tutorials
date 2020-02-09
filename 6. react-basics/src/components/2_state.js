@@ -2,24 +2,22 @@ import React from 'react';
 
 class State extends React.Component {
     constructor() {
-        super();
+        super()
         this.state = {
-            message: 'Welcome visitor'
+            message: "Hey there, welcome to the site"
         }
     }
-
-    handleClick() {
+    eventHandler() {
         this.setState({
-            message: 'Welcome all'
+            message: "Thank you for subscribing!!!"
         })
     }
-
     render() {
         return (
             <div>
-                {this.state.message}
+                <h1>{this.state.message}</h1>
                 <div>
-                    <button onClick={() => this.handleClick()}>Subscribe</button>
+                    <button onClick={() => this.eventHandler()}>Subscribe</button>
                 </div>
             </div>
         )
