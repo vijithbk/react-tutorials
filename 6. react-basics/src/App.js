@@ -14,12 +14,14 @@ import ConditionalRendering from './components/6_conditional_rendering';
 import ListRendering from './components/7_list_rendering';
 import StyleSheet from './components/8_stylesheets';
 import InlineStyles from './components/8_inline_styles';
+import Form from './components/9_form.js'
 
 function App() {
   return (
     <div className="App">
-      <h1 className="error">Error</h1>
-      <h1 className={styles.success}>Success</h1>
+      {/* <h1 className="error">Error</h1>
+      <h1 className={styles.success}>Success</h1> */}
+      
       {/* <Hello /> */}
       {/* <State /> */}
       {/* <Counter /> */}
@@ -28,7 +30,8 @@ function App() {
       {/* <ConditionalRendering /> */}
       {/* <ListRendering /> */}
       {/* <StyleSheet isPrimary={true} /> */}
-      <InlineStyles />
+      {/* <InlineStyles /> */}
+      <Form />
     </div>
   );
 }
