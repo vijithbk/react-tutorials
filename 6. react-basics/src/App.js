@@ -15,13 +15,14 @@ import ListRendering from './components/7_list_rendering';
 import StyleSheet from './components/8_stylesheets';
 import InlineStyles from './components/8_inline_styles';
 import Form from './components/9_form.js'
+import MountingLifeCycleMethodsA from './components/10_mounting_life_cycle_method';
 
 function App() {
   return (
     <div className="App">
       {/* <h1 className="error">Error</h1>
       <h1 className={styles.success}>Success</h1> */}
-      
+
       {/* <Hello /> */}
       {/* <State /> */}
       {/* <Counter /> */}
@@ -31,7 +32,8 @@ function App() {
       {/* <ListRendering /> */}
       {/* <StyleSheet isPrimary={true} /> */}
       {/* <InlineStyles /> */}
-      <Form />
+      {/* <Form /> */}
+      <MountingLifeCycleMethodsA />
     </div>
   );
 }
