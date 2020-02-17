@@ -18,6 +18,7 @@ import Form from './components/9_form.js'
 import MountingLifeCycleMethodsA from './components/10_mounting_life_cycle_method';
 import FragmentDemo from './components/11_Fragment'
 import FragmentTable from './components/12_FragmentTable'
+import ParentComp from './components/13_parent_comp'
 
 function App() {
   return (
@@ -37,7 +38,8 @@ function App() {
       {/* <Form /> */}
       {/* <MountingLifeCycleMethodsA /> */}
       {/* <FragmentDemo /> */}
-      <FragmentTable />
+      {/* <FragmentTable /> */}
+      <ParentComp />
     </div>
   );
 }
