@@ -19,6 +19,20 @@ class MountingLifeCycleMethodsB extends Component {
     componentDidMount() {
         console.log('MountingLifeCycleMethodsB componentDidMount')
     }
+
+    shouldComponentUpdate() {
+        console.log('MountingLifeCycleMethodsB shouldComponentUpdate')
+        return true
+    }
+    
+    getSnapshotBeforeUpdate() {
+        console.log('MountingLifeCycleMethodsB getSnapshotBeforeUpdate')
+        return null
+    }
+
+    componentDidUpdate() {
+        console.log('MountingLifeCycleMethodsB getSnapshotBeforeUpdate')
+    }
     
     render() {
         console.log('MountingLifeCycleMethodsB render')

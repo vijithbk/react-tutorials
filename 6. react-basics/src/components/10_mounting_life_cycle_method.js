@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import MountingLifeCycleMethodsB from './MountingLifeCycleMethodsB'
+import MountingLifeCycleMethodsB from './10_MountingLifeCycleMethodsB'
 
 class MountingLifeCycleMethodsA extends Component {
     constructor(props) {
@@ -13,6 +13,12 @@ class MountingLifeCycleMethodsA extends Component {
         console.log("MountingLifeCycleMethodsA Constructor method called.")
     }
 
+    changeState = () => {
+        this.setState({
+            name: 'Vijith'
+        })
+    }
+
     static getDerivedStateFromProps(props, state) {
         console.log('MountingLifeCycleMethodsA getDerivedStateFromProps')
         return null
@@ -21,13 +27,28 @@ class MountingLifeCycleMethodsA extends Component {
     componentDidMount() {
         console.log('MountingLifeCycleMethodsA componentDidMount')
     }
+
+    shouldComponentUpdate() {
+        console.log('MountingLifeCycleMethodsA shouldComponentUpdate')
+        return true
+    }
     
+    getSnapshotBeforeUpdate() {
+        console.log('MountingLifeCycleMethodsA getSnapshotBeforeUpdate')
+        return null
+    }
+
+    componentDidUpdate() {
+        console.log('MountingLifeCycleMethodsA getSnapshotBeforeUpdate')
+    }
+
     render() {
         console.log('MountingLifeCycleMethodsA render')
         return (
             <div>
                 MountingLifeCycleMethodsA
                 <MountingLifeCycleMethodsB />
+                <button onClick={this.changeState}>Change state</button>
             </div>
         )
     }

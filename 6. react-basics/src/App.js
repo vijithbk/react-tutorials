@@ -16,6 +16,8 @@ import StyleSheet from './components/8_stylesheets';
 import InlineStyles from './components/8_inline_styles';
 import Form from './components/9_form.js'
 import MountingLifeCycleMethodsA from './components/10_mounting_life_cycle_method';
+import FragmentDemo from './components/11_Fragment'
+import FragmentTable from './components/12_FragmentTable'
 
 function App() {
   return (
@@ -33,7 +35,9 @@ function App() {
       {/* <StyleSheet isPrimary={true} /> */}
       {/* <InlineStyles /> */}
       {/* <Form /> */}
-      <MountingLifeCycleMethodsA />
+      {/* <MountingLifeCycleMethodsA /> */}
+      {/* <FragmentDemo /> */}
+      <FragmentTable />
     </div>
   );
 }
