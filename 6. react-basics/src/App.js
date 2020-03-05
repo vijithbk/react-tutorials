@@ -20,6 +20,7 @@ import FragmentDemo from './components/11_Fragment'
 import FragmentTable from './components/12_FragmentTable'
 import ParentComp from './components/13_parent_comp'
 import ParentComponent2 from './components/14_parent_comp'
+import Refs from './components/15_refs_1'
 
 function App() {
   return (
@@ -41,7 +42,8 @@ function App() {
       {/* <FragmentDemo /> */}
       {/* <FragmentTable /> */}
       {/* <ParentComp /> */}
-      <ParentComponent2 />
+      {/* <ParentComponent2 /> */}
+      <Refs />
     </div>
   );
 }
