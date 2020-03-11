@@ -22,6 +22,9 @@ import ParentComp from './components/13_parent_comp'
 import ParentComponent2 from './components/14_parent_comp'
 import Refs from './components/15_refs_1'
 import Portals from './components/16_portals'
+import ClickCounter from './components/17_hoc_click_counter'
+import OverCounter from './components/17_hoc_hover_counter';
+import HttpGet from './components/18_http_get';
 
 function App() {
   return (
@@ -45,7 +48,12 @@ function App() {
       {/* <ParentComp /> */}
       {/* <ParentComponent2 /> */}
       {/* <Refs /> */}
-      <Portals />
+      {/* <Portals /> */}
+
+      {/* <ClickCounter name="vijith" />
+      <OverCounter /> */}
+
+      <HttpGet />
     </div>
   );
 }
