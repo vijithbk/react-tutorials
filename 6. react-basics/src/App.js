@@ -25,6 +25,7 @@ import Portals from './components/16_portals'
 import ClickCounter from './components/17_hoc_click_counter'
 import OverCounter from './components/17_hoc_hover_counter';
 import HttpGet from './components/18_http_get';
+import HttpPost from './components/19_http_post';
 
 function App() {
   return (
@@ -53,7 +54,8 @@ function App() {
       {/* <ClickCounter name="vijith" />
       <OverCounter /> */}
 
-      <HttpGet />
+      {/* <HttpGet /> */}
+      <HttpPost />
     </div>
   );
 }
